@@ -3,17 +3,16 @@
 let userName = prompt('Hello, what is you name');
 function welcome (userName){
 
-    alert('Great to see you! '  +  userName +  ' Iam happy you visited my website');
-  }
-  welcome(userName);
-  
+  alert('Great to see you! ' + userName + ' Iam happy you visited my website');
+}
+welcome(userName);
 
 //console.log('your name is: ' + userName);
 
 
 
 
-let q1 = prompt ('Do you know me well' +  userName +  'Your answer should be yes , no or Y , N ');
+let q1 = prompt ('Do you know me well' + userName + 'Your answer should be yes , no or Y , N ');
 function questionOne() {
 
 
@@ -36,9 +35,8 @@ let q2 = prompt ('Do I Wear Glasses All The Time ? .. Your answer should be yes 
 function questionTwo() {
 }
 
-if (q2.toLowerCase() === 'yes' || q2.toUpperCase () === 'Y'){
-  
-  alert('Good one, ' +  userName + '');
+if (q2.toLowerCase() === 'yes' || q2.toUpperCase () === 'Y')
+{ alert('Good one, ' + userName + '');
 
 } else{
 
@@ -50,7 +48,7 @@ questionTwo();
 
 
 
-let q3 = prompt ('Can i play piano?' +  userName + '..  yes , no or Y , N');
+let q3 = prompt ('Can i play piano?' + userName + '..  yes , no or Y , N');
 
 function questionThree() {
   if (q3.toLowerCase() === 'yes' || q3.toUpperCase() === 'Y' ){
@@ -74,9 +72,9 @@ function questionFour() {
 }
 
 if (q4.toLowerCase() === 'yes' || q4.toUpperCase() === 'Y'){
-  alert('Seems you Know me well,'+  userName +'');
+  alert('Seems you Know me well,'+ userName +'');
 } else {
-  alert('OOPS uncorrect!' +  userName  + 'I love coding');
+  alert('OOPS uncorrect!' + userName + 'I love coding');
 
 }
 questionFour();
@@ -85,17 +83,17 @@ questionFour();
 
 
 
-let q5 = prompt ('Did i work before? '+  userName + ' . .  yes , no or Y , N');
+let q5 = prompt ('Did i work before? '+ userName + ' . .  yes , no or Y , N');
 
 function questionFive() {
 }
 if (q5.toLowerCase() === 'yes' || q5.toUpperCase() === 'Y'){
-    alert('Good Job');
-  } else {
-    alert('Nup!'+  userName + ' you will know more when you read my bio ');
-  
-  }
-  questionFive();
-  //console.log('yourFifth answer is: ' + q5 );
+  alert('Good Job');
+} else {
+  alert('Nup!'+ userName + ' you will know more when you read my bio ');
+
+}
+questionFive();
+//console.log('yourFifth answer is: ' + q5 );
 
 
