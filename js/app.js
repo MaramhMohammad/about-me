@@ -1,7 +1,7 @@
 'use strict';
-let score = 0;
 
-let userName = prompt('Hello, what is you name');
+let score = 0;
+let userName = prompt('Hello, what is your name?');
 function welcome (userName){
 
   alert('Great to see you! ' + userName + ' Iam happy you visited my website');
@@ -13,7 +13,7 @@ welcome(userName);
 
 
 // Q number 1
-let q1 = prompt ('Do you know me well' + userName + 'Your answer should be yes , no or Y , N ');
+let q1 = prompt ('Do you know me well '+ userName + ' Your answer should be yes , no or Y , N ');
 function questionOne() {
 
 
@@ -106,48 +106,53 @@ if (q5.toLowerCase() === 'yes' || q5.toUpperCase() === 'Y'){
 
 }
 questionFive();
-//console.log('yourFifth answer is: ' + q5 );
+console.log('yourFifth answer is: ' + q5 );
 
 
 // Q number 6
 let mark = 13;
-for (let i = 4; i >= 1; i--) {
-  let numUserInput = prompt('try to guess the mark i got in 102 Exam ? hint *between 10-15');
-  if (numUserInput == mark) {
-    alert(' YES ' + userName + ' correct ');
-    score++;
-    break;
-  } else if (numUserInput > 13) {
-    alert('too high 🙊 , i did not have time to study well');
-  } else {
-    alert('Too Low, try again');
+function questionSix(){
+  for (let i = 4; i >= 1; i--) {
+    let numUserInput = parseInt(prompt('try to guess the mark i got in 102 Exam ? hint *between 10-15'));
+    if (numUserInput === mark) {
+      alert(' YES ' + userName + ' correct ');
+      // score++;
+      break;
+    } else if (numUserInput > 13) {
+      alert('too high 🙊 , i did not have time to study well');
+    } else {
+      alert('Too Low, try again');
+    }
+    if (i === 1)
+      alert('13 was the correct answer !');
+
   }
-  if (i === 1)
-    alert('13 was the correct answer !');
-
-
 }
+
+questionSix();
 
 // Q number 7
 
 let Singers = ['hamaki', 'mohammad hamaki', 'HAMAKI'];
 let hints = ['He is arabic singer', 'he is from egypt', 'he is the best singer ever!!!', 'min al bidaya 2oltilik, come on', 'his name start like my name M','Ya sattar.. stil not get ittt'];
-for (let i = 0; i <6; i++) {
-  let favSingInput = prompt('try to guess my favourite singer?');
-  if (favSingInput === Singers[0] || favSingInput === Singers[1] || favSingInput === Singers[2]) {
-    alert('thats true, He is the besttt');
-    score++;
-    break;
-  } else if (favSingInput !== Singers[0] || favSingInput !== Singers[1] || favSingInput !== Singers[2]) {
-    console.log(hints[i]);
-    alert(hints[i]);
+function questionSeven(){
+  for (let i = 0; i <6; i++) {
+    let favSingInput = prompt('try to guess my favourite singer?');
+    if (favSingInput === Singers[0] || favSingInput === Singers[1] || favSingInput === Singers[2]) {
+      alert('thats true, He is the besttt');
+      score++;
+      break;
+    } else if (favSingInput !== Singers[0] || favSingInput !== Singers[1] || favSingInput !== Singers[2]) {
+      console.log(hints[i]);
+      alert(hints[i]);
 
+    }
+
+    if (i === 6)
+      alert('hamaki', 'mohammad hamaki', 'HAMAKI');
   }
-
-  if (i === 6)
-    alert('hamaki', 'mohammad hamaki', 'HAMAKI');
 }
-
+questionSeven();
 
 
 
